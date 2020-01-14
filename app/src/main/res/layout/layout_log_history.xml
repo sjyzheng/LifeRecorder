@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:clickable="true"
+    android:onClick="animateIntent"
+    android:transitionName="transition"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/logDate"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+
+            android:gravity="center"
+            android:text="12/08/2019"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/imageScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logDate">
+
+            <LinearLayout
+                android:id="@+id/imageGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dividerPadding="@dimen/default_gap"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:showDividers="middle|beginning" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/logLocation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:gravity="center"
+            android:text="Location: In San Jose, CA; Seattle, WA"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageScrollView" />
+
+        <TextView
+            android:id="@+id/logPlace"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="At Google, Facebook, Amazon, Macy's."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logLocation" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

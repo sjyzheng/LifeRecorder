@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Life Recorder</string>
+    <string name="text_home">text_home</string>
+    <string name="string_home">Home</string>
+    <string name="string_camera">Camera</string>
+    <string name="string_log">Log</string>
+    <string name="string_social">Social</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="string_map">Map</string>
+    <string name="string_settings">Settings</string>
+    <string name="string_opencamera">Open Camera</string>
+    <string name="string_closecamera">Close Camera</string>
+    <string name="string_takephoto">Take Photo</string>
+    <string name="description_info">Description Info</string>
+    <string name="picture">Picture</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
